@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>kazantsev</title>
+		<script>
+var str = '123456';
+
+function toRearrange(text)
+{
+var arr = str.split('');
+var arrNew = [];
+for(var i=0; i<arr.length; i+=2)
+{
+var temp = arr.slice(i, i+2).reverse();
+arrNew = arrNew.concat(temp);
+}
+
+str = arrNew.join('');
+return str;
+}
+
+document.write(toRearrange(str));
+var str ='abcde abcde abcde';
+var newArr = [];
+
+var arr = str.split(' ');
+for (var i = 0; i < arr.length; i++) {
+	newArr.push(ucfirst(arr[i]));
+}
+
+var newStr = newArr.join(' ');
+alert(newStr);
+
+function ucfirst(str) {
+	return str[0].toUpperCase() + str.substr(1);
+}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
