@@ -4,10 +4,15 @@
 		<meta charset="utf-8">
 		<title>hello</title>
 		<script>
-var arr = ['3','4','8'];
-arr.forEach(function(elem)){
-document.write(elem*elem);
+var arr = [1,2,3,-2];
+var check= arr.some(function(elem){
+if (elem<0){
+return true;
+}
+else {return false;
+}
 });
+alert(check)
 		</script>
 	</head>
 	<body>

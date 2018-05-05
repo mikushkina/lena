@@ -4,10 +4,15 @@
 		<meta charset="utf-8">
 		<title>hello</title>
 		<script>
-var arr = ['3','4','8'];
-arr.forEach(function(elem)){
-document.write(elem*elem);
+var arr = [2,-3,5,3,-2];
+var filterarr= arr.filter(function(elem){
+if (elem % 2 ==0){
+return true;
+}
+else {return false;
+}
 });
+alert(filterarr)
 		</script>
 	</head>
 	<body>

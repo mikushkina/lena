@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<title>hello</title>
 		<script>
-var arr = ['3','4','8'];
-arr.forEach(function(elem)){
-document.write(elem*elem);
-});
+var arr = [1, 'string', [3, 4], 5, [6, 7]];
+function func(elem){return Array.isArray(elem)};
+var newArr = arr.filter(func);
+alert(newArr);
 		</script>
 	</head>
 	<body>
