@@ -7,10 +7,13 @@
 
                 </style>
 <script>
+var time = Date.parse('1988-03-01T00:00:00');
 var date = new Date();
-alert(date.getDate());
-alert(date.getMonth());
-alert(date.getFullYear());
+var now = date.getTime();
+var result = now - time
+result = result / (1000 * 60 * 60); 
+alert(result);
+alert(showDay(day));
 	</script>
 	</head>
 <body>

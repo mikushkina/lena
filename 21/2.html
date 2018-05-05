@@ -8,9 +8,14 @@
                 </style>
 <script>
 var date = new Date();
-alert(date.getDate());
-alert(date.getMonth());
-alert(date.getFullYear());
+var day = date.getDay();
+
+function showDay(day) {
+	var d = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+	return d[day];
+}
+
+alert(showDay(day));
 	</script>
 	</head>
 <body>
