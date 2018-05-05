@@ -5,16 +5,20 @@
 		<title>1-44</title>
 		<script>
 function start() {
-	window.setInterval(timer, 1000);
+	window.timerId=window.setInterval(timer, 1000);
 }
 function timer(){
 	var test = document.getElementById('abc');
 	test.innerHTML = parseInt(test.innerHTML)+1;
 		}
+function stop() {
+	window.clearInterval(window.timerId);
+}
 		</script>
 	</head>
 	<body>
 <p id="abc">0</p>
 <input type="submit" onclick="start()" value="Нажмите на меня!">
+<input type="submit" onclick="stop()" value="Stop!">
 	</body>
 </html>
