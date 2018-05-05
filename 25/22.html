@@ -15,15 +15,17 @@
 </style>
 	<body>
 <div id="elem"></div>
-<input type="submit" id="button">
+
 	</body>
         <script>
 var elem = document.getElementById('elem');
-var button = document.getElementById('button');
-button.addEventListener('click', func);
+elem.addEventListener('click', func);
 
 function func() {
-	alert(elem.clientTop);
+	var startWidth = this.offsetWidth;
+	var startHeight = this.offsetHeight;
+	this.style.width = startWidth * 2 + 'px';
+	this.style.height = startHeight * 2 + 'px';
 }
          </script>
 

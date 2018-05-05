@@ -18,12 +18,14 @@
 <input type="submit" id="button">
 	</body>
         <script>
-var elem = document.getElementById('elem');
 var button = document.getElementById('button');
 button.addEventListener('click', func);
 
 function func() {
-	alert(elem.clientTop);
+	var body = document.documentElement;
+	if (body.scrollHeight - body.scrollTop == body.clientHeight) {
+		window.scrollTo(0, 100);
+	}
 }
          </script>
 

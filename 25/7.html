@@ -23,7 +23,7 @@ var button = document.getElementById('button');
 button.addEventListener('click', func);
 
 function func() {
-	alert(elem.clientTop);
+	alert(getComputedStyle(elem).height + ' ' + getComputedStyle(elem).width);
 }
          </script>
 
