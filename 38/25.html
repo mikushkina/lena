@@ -9,8 +9,13 @@
 	<body>
 <li class="test">testtext</li>
 <li>testtext</li>
+<li>testtext</li>
                 <script>
-$('li').not('test')
+$(':header').nextAll().each(function (){
+	if (!$(this).is('p')) {
+		$(':header').after('<p>'+$(':header').html()+'</p>');
+	}
+});
                 </script>
 	</body>
 </html>
