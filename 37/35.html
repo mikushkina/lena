@@ -7,12 +7,11 @@
                 </script>
 	</head>
 	<body>
-<h2>text1</h2><h2>text2</h2>
-<h2>text1</h2><h2>text2</h2>
-<h2>text1</h2><h2>text2</h2>
-<h2>text1</h2><h2>text2</h2>
+<input value="textyetest"></input>
                 <script>
-$('h2').wrap('<div>')
+$('checkbox').each(function (){
+	$(this).prop('checked', !$(this).prop('checked'));
+});
                 </script>
 	</body>
 </html>

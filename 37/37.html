@@ -7,12 +7,13 @@
                 </script>
 	</head>
 	<body>
-<h2>text1</h2><h2>text2</h2>
-<h2>text1</h2><h2>text2</h2>
-<h2>text1</h2><h2>text2</h2>
-<h2>text1</h2><h2>text2</h2>
+<input value="textyetest"></input>
                 <script>
-$('h2').wrap('<div>')
+$('#wraper').children(':lt(3)').each(function() {
+	var width = $(this).width();
+	var height = $(this).height();
+	alert("Ширина: "+width+" Высота: "+height);
+})
                 </script>
 	</body>
 </html>
